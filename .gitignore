@@ -1,0 +1,9 @@
+.DS_Store
+*.dmg
+*.zip
+Sources/
+Tests/
+*.swift
+*.p12
+*.p8
+.env*
