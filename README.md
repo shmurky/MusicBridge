@@ -1,13 +1,14 @@
 <p align="center"><img src="icon.png" width="112" alt="MusicBridge icon"></p>
 <h1 align="center">MusicBridge</h1>
 <p align="center">Your Apple Music, on Discord.<br>A native macOS app for sharing what you are listening to.</p>
-<p align="center"><a href="https://github.com/shmurky/MusicBridge/releases/download/v0.3.0/MusicBridge-0.3.0-universal.dmg"><strong>Download for Mac</strong></a> · <a href="https://github.com/shmurky/MusicBridge/releases">All releases</a> · <a href="https://github.com/shmurky/MusicBridge/issues">Report an issue</a></p>
+<p align="center"><a href="https://github.com/shmurky/MusicBridge/releases/download/v0.3.2/MusicBridge-0.3.2-universal.dmg"><strong>Download for Mac</strong></a> · <a href="https://github.com/shmurky/MusicBridge/releases">All releases</a> · <a href="https://github.com/shmurky/MusicBridge/issues">Report an issue</a></p>
 
 ## What it does
 
 MusicBridge connects the Music app on your Mac to Discord Rich Presence. Play a song and your profile shows the track, artist, matching album artwork, and playback progress.
 
-- **Make it yours.** Show the song title, artist, or “Apple Music” after “Listening to”.
+- **Apple Music card.** Apple Music heading and icon, bold song title, artist, album, and playback progress.
+- **Make it yours.** Choose the song title, artist, or Apple Music for your member list status.
 - **Album artwork.** Matching covers from Apple's catalog, with a link to open the song in Apple Music.
 - **Pause to hide.** Your activity clears after you pause, stop playback, or close Music.
 - **Always nearby.** A native menu bar panel, a sharing switch, and optional launch at login.
@@ -16,7 +17,7 @@ MusicBridge connects the Music app on your Mac to Discord Rich Presence. Play a 
 
 ## Install
 
-1. Download **MusicBridge-0.3.0-universal.dmg** from [Releases](https://github.com/shmurky/MusicBridge/releases).
+1. Download **MusicBridge-0.3.2-universal.dmg** from [Releases](https://github.com/shmurky/MusicBridge/releases).
 2. Open the disk image and drag **MusicBridge** into **Applications**.
 3. Eject the disk image, then open MusicBridge from Applications.
 
@@ -34,7 +35,9 @@ MusicBridge connects the Music app on your Mac to Discord Rich Presence. Play a 
 6. Open Discord, play a song in Music, and allow MusicBridge to access Music when macOS asks.
 7. Make sure activity sharing is enabled in Discord's activity privacy settings.
 
-Choose **Song title**, **Artist**, or **Apple Music** in **Listening status** to change your presence text. MusicBridge checks playback every five seconds, so changes are not instant.
+Choose **Song title**, **Artist**, or **Apple Music** in **Member list status** to change your member list text. The activity card keeps the Apple Music heading.
+
+MusicBridge responds to Music playback notifications and checks every second as a fallback. Catalog artwork refreshes as soon as a match arrives; network and Discord delays can still apply. Matching handles accented titles and featured-artist credits.
 
 ## Troubleshooting
 
@@ -60,4 +63,4 @@ Download the **`.dmg` file** under Releases. GitHub also automatically adds “S
 
 MusicBridge is an independent app and is not affiliated with or endorsed by Apple or Discord. It was built independently and does not redistribute the Music Presence application.
 
-MusicBridge also reads embedded artwork directly from the Music app for its local preview. This artwork is kept in memory and is not uploaded. Discord artwork still requires a matching public image URL; local-only covers are not shared automatically. Catalog matches trigger an immediate refresh instead of waiting for the next five-second poll.
+MusicBridge also reads embedded artwork directly from the Music app for its local preview. This artwork is kept in memory and is not uploaded. Discord artwork still requires a matching public image URL; local-only covers are not shared automatically. Catalog matches trigger an immediate refresh.
