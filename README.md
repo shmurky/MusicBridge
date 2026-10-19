@@ -1,7 +1,7 @@
 <p align="center"><img src="icon.png" width="112" alt="MusicBridge icon"></p>
 <h1 align="center">MusicBridge</h1>
 <p align="center">Your Apple Music, on Discord.<br>A native macOS app for sharing what you are listening to.</p>
-<p align="center"><a href="https://github.com/shmurky/MusicBridge/releases/download/v0.3.2/MusicBridge-0.3.2-universal.dmg"><strong>Download for Mac</strong></a> · <a href="https://github.com/shmurky/MusicBridge/releases">All releases</a> · <a href="https://github.com/shmurky/MusicBridge/issues">Report an issue</a></p>
+<p align="center"><a href="https://github.com/shmurky/MusicBridge/releases/download/v0.3.3/MusicBridge-0.3.3-universal.dmg"><strong>Download for Mac</strong></a> · <a href="https://github.com/shmurky/MusicBridge/releases">All releases</a> · <a href="https://github.com/shmurky/MusicBridge/issues">Report an issue</a></p>
 
 ## What it does
 
@@ -17,7 +17,7 @@ MusicBridge connects the Music app on your Mac to Discord Rich Presence. Play a 
 
 ## Install
 
-1. Download **MusicBridge-0.3.2-universal.dmg** from [Releases](https://github.com/shmurky/MusicBridge/releases).
+1. Download **MusicBridge-0.3.3-universal.dmg** from [Releases](https://github.com/shmurky/MusicBridge/releases).
 2. Open the disk image and drag **MusicBridge** into **Applications**.
 3. Eject the disk image, then open MusicBridge from Applications.
 
@@ -37,7 +37,7 @@ MusicBridge connects the Music app on your Mac to Discord Rich Presence. Play a 
 
 Choose **Song title**, **Artist**, or **Apple Music** in **Member list status** to change your member list text. The activity card keeps the Apple Music heading.
 
-MusicBridge responds to Music playback notifications and checks every second as a fallback. Catalog artwork refreshes as soon as a match arrives; network and Discord delays can still apply. Matching handles accented titles and featured-artist credits.
+MusicBridge responds to Music playback notifications and checks every second as a fallback. Catalog artwork refreshes as soon as a match arrives; network and Discord delays can still apply. Matching handles accented titles, featured-artist credits, and collaboration metadata. Version 0.3.3 searches Apple Music directly for streaming releases missing from iTunes, and caches matching album tracks in memory for faster cover updates.
 
 ## Troubleshooting
 
@@ -45,7 +45,7 @@ MusicBridge responds to Music playback notifications and checks every second as 
 
 **Music access was denied?** Open **System Settings → Privacy & Security → Automation** and allow MusicBridge to access Music.
 
-**No album cover?** Artwork requires an internet connection and a matching title, artist, and album in Apple's catalog. Local-only releases and different metadata may not match. Text activity still works without a cover.
+**No album cover?** Artwork requires an internet connection and a matching title, artist, and album in Apple's catalog. Local-only releases and different metadata may not match. Text activity still works without a cover; a large Apple Music logo is no longer used as a replacement.
 
 **Music is playing on my iPhone.** MusicBridge currently reads playback on the Mac where it is running.
 
@@ -53,7 +53,7 @@ MusicBridge responds to Music playback notifications and checks every second as 
 
 ## Privacy
 
-MusicBridge stores settings locally and does not record listening history or send data to a MusicBridge server. It sends the current title and artist to Apple's public iTunes Search API to find matching artwork, and passes activity information to the local Discord client. Apple hosts the artwork; Discord shares the activity according to your account settings. See [PRIVACY.md](PRIVACY.md).
+MusicBridge stores settings locally and does not record listening history or send data to a MusicBridge server. It searches public Apple Music pages using the album and album artist, with title, artist, and album searches through Apple's iTunes Search API as a fallback, and passes activity information to the local Discord client. Apple hosts the artwork; Discord shares the activity according to your account settings. See [PRIVACY.md](PRIVACY.md).
 
 ## About this repository
 
