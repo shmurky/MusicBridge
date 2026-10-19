@@ -1,21 +1,21 @@
-# MusicBridge 0.3.2 — Preview
+# MusicBridge 0.3.3 — Artwork fix (Preview)
 
-Download **MusicBridge-0.3.2-universal.dmg** from [the release](https://github.com/shmurky/MusicBridge/releases/tag/v0.3.2). Quit MusicBridge, replace the app in Applications, and reopen it. Settings are preserved.
+Download **MusicBridge-0.3.3-universal.dmg** below. Quit MusicBridge, open the disk image, replace the app in Applications, and reopen it. Your settings are preserved.
 
-## Changes
+## Fixed
 
-- Faster track detection through Music notifications, with a one-second fallback check.
-- Fixed cover matching for accented titles and featured-artist credits, including Flawless / Flawlëss.
-- Immediate refresh when catalog artwork arrives. Network and Discord delays can still apply.
-- Apple Music heading and icon, bold song title, artist, album, and playback progress on the Discord card.
-- Configurable member list status.
+- Searches public Apple Music album pages for streaming releases missing from the iTunes catalog, including ADL.
+- Caches matching album tracks in memory so subsequent songs can reuse their artwork immediately.
+- Improves matching for collaborations, accented titles, featured artists, and Single/EP labels while preserving live/remix/deluxe distinctions.
+- Adds fallback search variants and retries unsuccessful matches sooner.
+- Removes the large Apple Music logo used when no cover was found. The app now reports that the album cover is not available yet.
 
-## Requirements
+The first lookup still depends on network response time and catalog availability. Local-only artwork is not uploaded.
 
-macOS 13 or later and the desktop Discord app. A Discord Application ID is required; see the README. Universal Apple Silicon and Intel build; Intel has not been tested on hardware.
+## Install
+
+Requires macOS 13 or later, desktop Discord, and a Discord Application ID (see README). Universal Apple Silicon/Intel build; Intel has not been tested on hardware.
 
 This preview is signed ad hoc and **not notarized by Apple**. macOS may block it because the developer is not verified.
 
-Discord artwork requires a matching public image from Apple's catalog. Local-only covers are not uploaded.
-
-Checksums are included in **SHA256SUMS.txt**. GitHub's automatic source archives contain public documentation only; application source remains private.
+SHA-256 checksums are provided in **SHA256SUMS.txt**. GitHub's automatic source archives contain public documentation only; application source remains private.
